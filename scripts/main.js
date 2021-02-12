@@ -1,24 +1,31 @@
-document.getElementById('colorBlu').addEventListener('click', function (e) {
-    e.preventDefault();
-    var res = document.getElementById('res');
-    res.innerHTML = "You've choosen blue Colour";
-    colorFlem.style.backgroundColor = 'white';
-    msg1.innerHTML = "";
-    msg2.innerHTML = "Click here to find colour"
-    let utterance = new SpeechSynthesisUtterance(res.innerHTML);
-    speechSynthesis.speak(utterance);
-    error = false;
-    console.log()
-});
 
-document.getElementById("colorFlem").addEventListener('click', function (e) {
-    e.preventDefault();
-    var res = document.getElementById('res');
-    res.innerHTML = "You've choosen flemengo Colour";
-    colorBlu.style.backgroundColor = 'white';
-    msg2.innerHTML = ""
-    msg1.innerHTML = "Click here to find colour"
-    let utterance = new SpeechSynthesisUtterance(res.innerHTML);
+function b1() {
+
+    let colors = ["blue", "green", "yellow", "cyan"]
+    const random = Math.floor(Math.random() * colors.length);
+    console.log(random, colors[random]);
+    colorBlu.style.backgroundColor = colors[random];
+    let utterance = new SpeechSynthesisUtterance(`You have choosen ${colors[random]} Colour`);
     speechSynthesis.speak(utterance);
     error = false;
-});
+
+    var res = document.getElementById('res');
+    res.innerHTML = `You have choosen ${colors[random]} Colour`;
+
+}
+
+
+function b2() {
+    let colors = ["orange", "pink", "brown", "grey"]
+    const random = Math.floor(Math.random() * colors.length);
+    console.log(random, colors[random]);
+
+    colorFlem.style.backgroundColor = colors[random];
+    let utterance = new SpeechSynthesisUtterance(`You have choosen ${colors[random]} Colour`);
+    speechSynthesis.speak(utterance);
+    error = false;
+
+    var res = document.getElementById('res');
+    res.innerHTML = `You have choosen ${colors[random]} Colour`;
+}
+
