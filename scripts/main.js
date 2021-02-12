@@ -1,7 +1,10 @@
 
+    colorBlu.style.backgroundColor = "blue";
+
+
 function b1() {
 
-    let colors = ["blue", "green", "yellow", "cyan"]
+    let colors = [ "green", "yellow", "cyan"]
     const random = Math.floor(Math.random() * colors.length);
     console.log(random, colors[random]);
     colorBlu.style.backgroundColor = colors[random];
@@ -14,8 +17,11 @@ function b1() {
 
 }
 
+colorFlem.style.backgroundColor = "orange";
 
 function b2() {
+
+
     let colors = ["orange", "pink", "brown", "grey"]
     const random = Math.floor(Math.random() * colors.length);
     console.log(random, colors[random]);
