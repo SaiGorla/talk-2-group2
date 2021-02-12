@@ -9,8 +9,8 @@ function b1() {
     speechSynthesis.speak(utterance);
     error = false;
 
-    var res = document.getElementById('res');
-    res.innerHTML = `You have choosen ${colors[random]} Colour`;
+    // var res = document.getElementById('res');
+    // res.innerHTML = `You have choosen ${colors[random]} Colour`;
 
 }
 
@@ -25,7 +25,7 @@ function b2() {
     speechSynthesis.speak(utterance);
     error = false;
 
-    var res = document.getElementById('res');
-    res.innerHTML = `You have choosen ${colors[random]} Colour`;
+    // var res = document.getElementById('res');
+    // res.innerHTML = `You have choosen ${colors[random]} Colour`;
 }
 
